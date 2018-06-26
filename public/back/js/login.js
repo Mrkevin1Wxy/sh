@@ -56,13 +56,7 @@ $(function(){
   });
 
 
-  //重置表单BUG 重置的表单不仅要重置内容,还要重置校验
-
-  $('[type="reset"]').click(function(){
-    //调用插件的方法
-    $('#form').data('bootstrapValidator').resetForm();
-    
-  });
+ 
 
   //使用sumbit按钮,进行提交,表单验证插件 会在提交时,进行校验
 
@@ -84,7 +78,7 @@ $(function(){
       success:function( info ){
         console.log(info);
         if(info.success){
-          location.href="index.html"
+          location.href= "index.html";
         }
 
         if(info.error === 1000){
@@ -99,6 +93,12 @@ $(function(){
     })
     
   })
+   //重置表单BUG 重置的表单不仅要重置内容,还要重置校验
 
+   $('[type="reset"]').click(function () {
+     //调用插件的方法
+     $('#form').data('bootstrapValidator').resetForm();
+
+   });
 
 })

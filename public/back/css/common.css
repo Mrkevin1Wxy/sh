@@ -31,6 +31,10 @@ ul{
   margin-top:150px;
 }
 
+.md_20{
+  margin-bottom: 20px;
+}
+
 /* 侧边栏 */
 .lt_aside{
   width: 180px;
@@ -111,10 +115,10 @@ ul{
 /* 右侧主体 */
 
 .lt_main{
-  height: 1000px;
+  height: 100%;
   width: 100%;
   padding-left: 180px;
-  background-color:pink;
+  /* background-color:pink; */
   padding-top:50px;
   transition: all 1s;
 
@@ -156,3 +160,13 @@ ul{
 .lt_main .breadcrumb{
   margin-top: 20px;
 }
+
+
+.echarts_1,
+.echarts_2{
+  width: 48%;
+  height: 400px;
+}
+
+
+/* 让所有的th 和td 都水平垂直居中 */

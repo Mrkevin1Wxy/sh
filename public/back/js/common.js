@@ -29,12 +29,12 @@ if(location.href.indexOf("login.html") === -1){
 
 //进度条
 $(document).ajaxStart(function(){
-  Nprogress.start();
+  NProgress.start();
 });
 //请求结束进度条结束
 $(document).ajaxStop(function(){
    setTimeout(function(){
-     Nprogress.done();
+     NProgress.done();
    },500);
 })
 
